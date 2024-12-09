@@ -1,0 +1,131 @@
+import static com.kms.katalon.core.checkpoint.CheckpointFactory.findCheckpoint
+import static com.kms.katalon.core.testcase.TestCaseFactory.findTestCase
+import static com.kms.katalon.core.testdata.TestDataFactory.findTestData
+import static com.kms.katalon.core.testobject.ObjectRepository.findTestObject
+import static com.kms.katalon.core.testobject.ObjectRepository.findWindowsObject
+import com.kms.katalon.core.checkpoint.Checkpoint as Checkpoint
+import com.kms.katalon.core.cucumber.keyword.CucumberBuiltinKeywords as CucumberKW
+import com.kms.katalon.core.mobile.keyword.MobileBuiltInKeywords as Mobile
+import com.kms.katalon.core.model.FailureHandling as FailureHandling
+import com.kms.katalon.core.testcase.TestCase as TestCase
+import com.kms.katalon.core.testdata.TestData as TestData
+import com.kms.katalon.core.testng.keyword.TestNGBuiltinKeywords as TestNGKW
+import com.kms.katalon.core.testobject.TestObject as TestObject
+import com.kms.katalon.core.webservice.keyword.WSBuiltInKeywords as WS
+import com.kms.katalon.core.webui.keyword.WebUiBuiltInKeywords as WebUI
+import com.kms.katalon.core.windows.keyword.WindowsBuiltinKeywords as Windows
+import internal.GlobalVariable as GlobalVariable
+import org.openqa.selenium.Keys as Keys
+
+WebUI.openBrowser('')
+
+WebUI.navigateToUrl('https://www.na.edu/')
+
+WebUI.click(findTestObject('Object Repository/NAUTest/Page_Welcome to North American University (_345d54/ul_AdmissionsUndergraduateOffice of Admissi_cd9b30'))
+
+WebUI.click(findTestObject('Object Repository/NAUTest/Page_Welcome to North American University (_345d54/span_Admissions'))
+
+WebUI.setText(findTestObject('Object Repository/NAUTest/Page_Admissions for our Undergraduate and G_455cb9/input_NAU Newsletters_s'), 
+    'apply')
+
+WebUI.sendKeys(findTestObject('Object Repository/NAUTest/Page_Admissions for our Undergraduate and G_455cb9/input_NAU Newsletters_s'), 
+    Keys.chord(Keys.ENTER))
+
+WebUI.click(findTestObject('Object Repository/NAUTest/Page_You searched for apply - North America_d66a19/span_Apply Now'))
+
+WebUI.switchToWindowTitle('North American University')
+
+WebUI.click(findTestObject('Object Repository/NAUTest/Page_North American University/span_Username'))
+
+WebUI.setText(findTestObject('Object Repository/NAUTest/Page_North American University/input_Sign In_j_id0j_id1siteLoginloginCompo_1844f7'), 
+    'hyapici@na.edu')
+
+WebUI.click(findTestObject('Object Repository/NAUTest/Page_North American University/span_Password'))
+
+WebUI.setEncryptedText(findTestObject('Object Repository/NAUTest/Page_North American University/input_Username_j_id0j_id1siteLoginloginComp_65dbca'), 
+    'OlCO1VYwYaB8ITqNuYbOrw==')
+
+WebUI.click(findTestObject('Object Repository/NAUTest/Page_North American University/button_Sign In'))
+
+WebUI.click(findTestObject('Object Repository/NAUTest/Page_North American University/div_ErrorYour login attempt has failed. Mak_70370c'))
+
+WebUI.switchToWindowTitle('You searched for apply - North American University')
+
+WebUI.click(findTestObject('Object Repository/NAUTest/Page_You searched for apply - North America_d66a19/span_Request Info'))
+
+WebUI.setText(findTestObject('Object Repository/NAUTest/Page_/input_First Name_tfa_546'), 'Hajar')
+
+WebUI.setText(findTestObject('Object Repository/NAUTest/Page_/input_Last Name_tfa_586'), 'Yapici')
+
+WebUI.setText(findTestObject('Object Repository/NAUTest/Page_/input_Email_tfa_533'), 'lifeinnbrazil@gmail.com')
+
+WebUI.setText(findTestObject('Object Repository/NAUTest/Page_/input_Re-type Email_tfa_666'), 'lifeinnbrazil@gmail.com')
+
+WebUI.setText(findTestObject('Object Repository/NAUTest/Page_/input_Mobile Phone_tfa_606'), '11971377071')
+
+WebUI.setText(findTestObject('Object Repository/NAUTest/Page_/input_City_tfa_587'), 'Santo Amaro')
+
+WebUI.setText(findTestObject('Object Repository/NAUTest/Page_/input_StateProvince_tfa_589'), 'Sao Paulo')
+
+WebUI.setText(findTestObject('Object Repository/NAUTest/Page_/input_ZipPostal Code_tfa_591'), '04750-001')
+
+WebUI.click(findTestObject('Object Repository/NAUTest/Page_/i_Country_fa fa-search tt-search'))
+
+WebUI.click(findTestObject('Object Repository/NAUTest/Page_/div_BRAZIL'))
+
+WebUI.selectOptionByValue(findTestObject('Object Repository/NAUTest/Page_/select_Please select.20242025202620272023'), 'tfa_723', 
+    true)
+
+WebUI.selectOptionByValue(findTestObject('Object Repository/NAUTest/Page_/select_Please select.FallSpringSummer'), 'tfa_51', 
+    true)
+
+WebUI.selectOptionByValue(findTestObject('Object Repository/NAUTest/Page_/select_Please select.FallSpringSummer'), 'tfa_53', 
+    true)
+
+WebUI.click(findTestObject('Object Repository/NAUTest/Page_/input_Program_tfa_607'))
+
+WebUI.click(findTestObject('Object Repository/NAUTest/Page_/div_Masters in Curriculum  Instruction - En_79efc5'))
+
+WebUI.selectOptionByValue(findTestObject('Object Repository/NAUTest/Page_/select_Please select.Citizen of USResident _526dd7'), 
+    'tfa_668', true)
+
+WebUI.selectOptionByValue(findTestObject('Object Repository/NAUTest/Page_/select_Please select.UNITED STATES OF AMERI_d56e55'), 
+    'tfa_504', true)
+
+WebUI.selectOptionByValue(findTestObject('Object Repository/NAUTest/Page_/select_Please select.Admission RepAthletic _85d7f2'), 
+    'tfa_566', true)
+
+WebUI.click(findTestObject('Object Repository/NAUTest/Page_/katalon-div_id(katalon-rec_elementInfoDiv)'))
+
+WebUI.click(findTestObject('Object Repository/NAUTest/Page_/img_bicycles_rc-image-tile-44'))
+
+WebUI.click(findTestObject('Object Repository/NAUTest/Page_/img_bicycles_rc-image-tile-44_1'))
+
+WebUI.click(findTestObject('Object Repository/NAUTest/Page_/img_bicycles_rc-image-tile-44_1_2'))
+
+WebUI.click(findTestObject('Object Repository/NAUTest/Page_/img_bicycles_rc-image-tile-44_1_2_3'))
+
+WebUI.click(findTestObject('Object Repository/NAUTest/Page_/img_bicycles_rc-image-tile-44_1_2_3_4'))
+
+WebUI.click(findTestObject('Object Repository/NAUTest/Page_/button_Verify'))
+
+WebUI.click(findTestObject('Object Repository/NAUTest/Page_/img_motorcycles_rc-image-tile-44'))
+
+WebUI.click(findTestObject('Object Repository/NAUTest/Page_/img_motorcycles_rc-image-tile-44_1'))
+
+WebUI.click(findTestObject('Object Repository/NAUTest/Page_/img_motorcycles_rc-image-tile-44_1_2'))
+
+WebUI.click(findTestObject('Object Repository/NAUTest/Page_/img_motorcycles_rc-image-tile-44_1_2_3'))
+
+WebUI.click(findTestObject('Object Repository/NAUTest/Page_/img_motorcycles_rc-image-tile-44_1_2_3_4'))
+
+WebUI.click(findTestObject('Object Repository/NAUTest/Page_/img_motorcycles_rc-image-tile-44_1_2_3_4_5'))
+
+WebUI.click(findTestObject('Object Repository/NAUTest/Page_/button_Verify'))
+
+WebUI.click(findTestObject('Object Repository/NAUTest/Page_/input_The submit button will be disabled un_9c607d'))
+
+WebUI.click(findTestObject('Object Repository/NAUTest/Page_/div_Please review the error(s) below.1. Cre_d3fc9b'))
+
+WebUI.closeBrowser()
+
